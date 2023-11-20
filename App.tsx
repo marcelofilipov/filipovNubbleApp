@@ -5,15 +5,13 @@ import {Text} from './src/components/Text/Text';
 function App(): JSX.Element {
   return (
     <SafeAreaView>
-      <Text preset="paragraphLarge" style={{color: 'red'}}>
+      <Text italic preset="headingMedium">
         NubbleApp
       </Text>
 
-      <Text preset="paragraphLarge" style={{fontFamily: 'Satoshi-Italic'}}>
-        NubbleApp
-      </Text>
+      <Text preset="paragraphLarge">NubbleApp</Text>
 
-      <Text style={{color: 'green'}}>NubbleApp</Text>
+      <Text>NubbleApp</Text>
     </SafeAreaView>
   );
 }
