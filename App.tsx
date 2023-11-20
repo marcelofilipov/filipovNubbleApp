@@ -9,7 +9,7 @@ function App(): JSX.Element {
         NubbleApp
       </Text>
 
-      <Text preset="paragraphSmall" style={{color: 'blue'}}>
+      <Text preset="paragraphLarge" style={{fontFamily: 'Satoshi-Italic'}}>
         NubbleApp
       </Text>
 
