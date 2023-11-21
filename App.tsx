@@ -1,17 +1,18 @@
 import React from 'react';
-import {SafeAreaView} from 'react-native';
+import {SafeAreaView, View} from 'react-native';
 import {Text} from './src/components/Text/Text';
+import {Button} from './src/components/Button/Button';
 
 function App(): JSX.Element {
   return (
     <SafeAreaView>
-      <Text italic preset="headingMedium">
-        NubbleApp
-      </Text>
+      <View style={{paddingHorizontal: 24}}>
+        <Text italic preset="headingMedium">
+          NubbleApp
+        </Text>
 
-      <Text preset="paragraphLarge">NubbleApp</Text>
-
-      <Text>NubbleApp</Text>
+        <Button title="Entrar" />
+      </View>
     </SafeAreaView>
   );
 }
