@@ -16,14 +16,7 @@ export function Button({title, loading}: ButtonProps) {
       height={50}
       alignItems="center"
       justifyContent="center"
-      // style={{
-      //   paddingHorizontal: 20,
-      //   paddingVertical: 14,
-      //   backgroundColor: colors.carrotSecondary,
-      //   alignItems: 'center',
-      //   borderRadius: 16,
-      // }}
-    >
+      borderRadius="s16">
       {loading ? (
         <ActivityIndicator />
       ) : (
