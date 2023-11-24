@@ -4,7 +4,6 @@ import {ThemeProvider} from '@shopify/restyle';
 import {Text} from './src/components/Text/Text';
 import {Button} from './src/components/Button/Button';
 import {theme} from './src/theme/theme';
-import {Box} from './src/components/Box/Box';
 
 function App(): JSX.Element {
   return (
@@ -14,9 +13,9 @@ function App(): JSX.Element {
           <Text italic preset="headingMedium">
             NubbleApp
           </Text>
-          <Box marginBottom="s24">
-            <Button title="Entrar" />
-          </Box>
+
+          <Button title="Entrar" marginBottom="s12" />
+
           <Button loading title="Loading" />
         </View>
       </SafeAreaView>
