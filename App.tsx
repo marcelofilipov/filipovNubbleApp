@@ -4,8 +4,6 @@ import {ThemeProvider} from '@shopify/restyle';
 import {Text} from './src/components/Text/Text';
 import {Button} from './src/components/Button/Button';
 import {theme} from './src/theme/theme';
-import {EyeOffIcon} from './src/assets/icons/EyeOffIcon';
-import {EyeOnIcon} from './src/assets/icons/EyeOnIcon';
 import {Icon} from './src/components/Icon/Icon';
 
 function App(): JSX.Element {
@@ -28,8 +26,8 @@ function App(): JSX.Element {
           />
 
           <Button loading title="Loading" />
-          <Icon name="eyeOn" />
-          <Icon name="eyeOff" />
+          <Icon name="eyeOn" color="error" size={40} />
+          <Icon name="eyeOff" color="carrotSecondary" size={40} />
         </View>
       </SafeAreaView>
     </ThemeProvider>
