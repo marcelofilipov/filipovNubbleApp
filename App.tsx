@@ -14,7 +14,8 @@ function App(): JSX.Element {
             NubbleApp
           </Text>
 
-          <Button title="Entrar" marginBottom="s12" />
+          <Button title="Primary" marginBottom="s12" />
+          <Button preset="outline" title="Outline" marginBottom="s12" />
 
           <Button loading title="Loading" />
         </View>
