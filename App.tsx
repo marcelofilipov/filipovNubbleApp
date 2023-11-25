@@ -5,6 +5,8 @@ import {Text} from './src/components/Text/Text';
 import {Button} from './src/components/Button/Button';
 import {theme} from './src/theme/theme';
 import {EyeOffIcon} from './src/assets/icons/EyeOffIcon';
+import {EyeOnIcon} from './src/assets/icons/EyeOnIcon';
+import {Icon} from './src/components/Icon/Icon';
 
 function App(): JSX.Element {
   return (
@@ -26,7 +28,8 @@ function App(): JSX.Element {
           />
 
           <Button loading title="Loading" />
-          <EyeOffIcon size={100} color="blue" />
+          <Icon name="eyeOn" />
+          <Icon name="eyeOff" />
         </View>
       </SafeAreaView>
     </ThemeProvider>
