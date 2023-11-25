@@ -15,7 +15,14 @@ function App(): JSX.Element {
           </Text>
 
           <Button title="Primary" marginBottom="s12" />
-          <Button loading preset="outline" title="Outline" marginBottom="s12" />
+          <Button disabled title="Primary" marginBottom="s12" />
+          <Button preset="outline" title="Outline" marginBottom="s12" />
+          <Button
+            disabled
+            preset="outline"
+            title="Outline"
+            marginBottom="s12"
+          />
 
           <Button loading title="Loading" />
         </View>
