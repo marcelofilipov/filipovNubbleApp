@@ -28,6 +28,7 @@ function App(): JSX.Element {
           <Button loading title="Loading" />
           <Icon name="eyeOn" color="error" size={40} />
           <Icon name="eyeOff" color="carrotSecondary" size={40} />
+          <Icon name="arrowLeft" color="buttonPrimary" size={40} />
         </View>
       </SafeAreaView>
     </ThemeProvider>
