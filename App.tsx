@@ -4,6 +4,7 @@ import {ThemeProvider} from '@shopify/restyle';
 import {Text} from './src/components/Text/Text';
 import {Button} from './src/components/Button/Button';
 import {theme} from './src/theme/theme';
+import {EyeOffIcon} from './src/assets/icons/EyeOffIcon';
 
 function App(): JSX.Element {
   return (
@@ -25,6 +26,7 @@ function App(): JSX.Element {
           />
 
           <Button loading title="Loading" />
+          <EyeOffIcon size={100} color="blue" />
         </View>
       </SafeAreaView>
     </ThemeProvider>
