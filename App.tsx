@@ -19,22 +19,22 @@ function App(): JSX.Element {
           <Text mb="s40" preset="paragraphLarge">
             Digite seu e-mail e senha para entrar
           </Text>
-          <Box mb="s20">
-            <TextInput
-              errorMessage="Mensagem de erro"
-              label="E-mail"
-              placeholder="Digite seu e-mail"
-            />
-          </Box>
-          <Box>
-            <TextInput
-              label="Senha"
-              placeholder="Digite sua senha"
-              RightComponent={<Icon color="gray2" name="eyeOn" />}
-            />
-          </Box>
 
-          <Text color="primary" preset="paragraphSmall" bold mt="s10">
+          <TextInput
+            errorMessage="Mensagem de erro"
+            label="E-mail"
+            placeholder="Digite seu e-mail"
+            boxProps={{mb: 's20'}}
+          />
+
+          <TextInput
+            label="Senha"
+            placeholder="Digite sua senha"
+            RightComponent={<Icon color="gray2" name="eyeOn" />}
+            boxProps={{mb: 's10'}}
+          />
+
+          <Text color="primary" preset="paragraphSmall" bold>
             Esqueci minha senha
           </Text>
 
