@@ -7,11 +7,12 @@ import {Button} from '../../../components/Button/Button';
 import {PasswordInput} from '../../../components/PasswordInput/PasswordInput';
 import {RootStackParamList} from '../../../routes/Routes';
 
-type ScreenProps = NativeStackScreenProps<RootStackParamList, 'LoginScreen'>;
+type ScreenProps = NativeStackScreenProps<RootStackParamList, 'SignUpScreen'>;
 
-export function SignUpScreen(props: ScreenProps) {
+export function SignUpScreen({navigation}: ScreenProps) {
   function submitForm() {
     // ! TODO - Implementar
+    navigation.navigate('SuccessScreen');
   }
 
   return (
