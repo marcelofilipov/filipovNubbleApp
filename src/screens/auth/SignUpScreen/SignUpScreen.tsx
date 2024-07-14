@@ -8,6 +8,7 @@ import {Button} from '../../../components/Button/Button';
 import {PasswordInput} from '../../../components/PasswordInput/PasswordInput';
 import {RootStackParamList} from '../../../routes/Routes';
 import {useResetNavigationSuccess} from '../../../hooks/useResetNavigationSuccess';
+import {FormTextInput} from '../../../components/Form/FormTextInput';
 
 type SignUpFormType = {
   userName: string;
@@ -51,20 +52,13 @@ export function SignUpScreen({navigation}: ScreenProps) {
         Criar uma conta
       </Text>
 
-      <Controller
+      <FormTextInput
         control={control}
         name="userName"
         rules={{required: 'Nome de usuário é obrigatório'}}
-        render={({field, fieldState}) => (
-          <TextInput
-            value={field.value}
-            onChangeText={field.onChange}
-            errorMessage={fieldState.error?.message}
-            label="Seu nome de usuário"
-            placeholder="@"
-            boxProps={{mb: 's20'}}
-          />
-        )}
+        label="Seu nome de usuário"
+        placeholder="@"
+        boxProps={{mb: 's20'}}
       />
 
       <Controller
