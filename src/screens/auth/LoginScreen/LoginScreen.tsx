@@ -2,14 +2,16 @@ import React from 'react';
 import {useForm} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {Button} from '../../../components/Button/Button';
-import {Text} from '../../../components/Text/Text';
-import {Screen} from '../../../components/Screen/Screen';
+import {
+  Button,
+  FormPasswordInput,
+  FormTextInput,
+  Screen,
+  Text,
+} from '@components';
 import {RootStackParamList} from '../../../routes/Routes';
 import {Alert} from 'react-native';
 import {LoginSchema, loginSchema} from './loginSchema';
-import {FormTextInput} from '../../../components/Form/FormTextInput';
-import {FormPasswordInput} from '../../../components/Form/FormPasswordInput';
 
 type ScreenProps = NativeStackScreenProps<RootStackParamList, 'LoginScreen'>;
 
