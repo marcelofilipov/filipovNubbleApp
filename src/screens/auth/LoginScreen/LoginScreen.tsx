@@ -9,7 +9,7 @@ import {
   Screen,
   Text,
 } from '@components';
-import {RootStackParamList} from '../../../routes/Routes';
+import {RootStackParamList} from '@routes';
 import {Alert} from 'react-native';
 import {LoginSchema, loginSchema} from './loginSchema';
 

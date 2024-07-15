@@ -1,11 +1,8 @@
 import React from 'react';
-import {Box, TouchableOpacityBox} from '../Box/Box';
-import {useAppSafeArea} from '../../hooks/useAppSafeArea';
-import {Icon} from '../Icon/Icon';
-import {Text} from '../Text/Text';
 import {KeyboardAvoidingView, Platform} from 'react-native';
+import {useAppSafeArea, useAppTheme} from '@hooks';
+import {Box, TouchableOpacityBox, Icon, Text} from '@components';
 import {ScrolViewContainer, ViewContainer} from './components/ScreenContainer';
-import {useAppTheme} from '../../hooks/useAppThemes';
 import {useNavigation} from '@react-navigation/native';
 
 interface ScreenProps {
